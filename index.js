@@ -5,8 +5,6 @@ const port = process.env.PORT || 3000;
 
 // Middleware для обработки тела запроса в формате JSON
 app.use(express.json());
-
-// GET запрос для получения всех пользователей
 app.get('/users', (req, res) => {
     fs.readFile('users.json', 'utf8', (err, data) => {
         if (err) {
