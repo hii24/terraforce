@@ -7,6 +7,9 @@
     "start": "node index.js",
     "build": "git add . && git commit -m'build' && git push heroku master"
   },
+  "engines": {
+    "node": "14.x"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
